@@ -1,5 +1,5 @@
 import React from "react";
-import profile from "@/assets/profile.jpeg";
+import me from "@/assets/me.png";
 import Image from "next/image";
 
 export default function AboutMe() {
@@ -8,30 +8,29 @@ export default function AboutMe() {
 			<div className=' order-2 space-y-10'>
 				<h1 className=' font-bold text-3xl'>⚡ About Me</h1>
 				<p className=' text-muted-foreground text-sm md:text-lg font-medium'>
-					Hey! I&apos;m Abdul Rahman, I&apos;ve been close to a computer since
-					an early age, and been passionate about it ever since.
+					Hello! I&apos;m MD Atick, an 18-year-old passionate Full Stack Web
+					Developer with over <span className='text-[#3CCF91]'>3 years</span> of
+					hands-on experience. I discovered my love for coding at the{" "}
+					<span className='text-[#3CCF91]'>age of 15</span>, and since then,
+					it&apos;s been more than just a skill—it&apos;s my passion.
 				</p>
 				<p className=' text-muted-foreground text-sm md:text-lg font-medium'>
-					I really liked to build stuff using no-code tools back in 2010, and
-					from that, I explored how to code myself, fast-forward to today, I do
-					programming{" "}
-					<span className=' text-[#3CCF91]'>
-						{" "}
-						in various languages and technologies,
-					</span>{" "}
-					and had the privilege to worked in a Recruitment Company and a SaaS
-					Company I&apos;m interested in building something awesome with code
-					and automate tasks with code, currently focused on Web & Mobile
-					Development, Open Source and Competitive Programming
+					I specialize in
+					<span className='text-[#3CCF91]'> Full Stack Web Development</span>,
+					creating scalable APIs and serverless architectures, while also
+					building responsive and intuitive frontend interfaces using React and
+					Next.js. Whether it&apos;s designing elegant user experiences or
+					engineering powerful server-side solutions, I thrive in both worlds.
 				</p>
 				<p className=' text-muted-foreground text-sm md:text-lg font-medium'>
-					When I&apos;m not coding I play games with my friends, watch some show
-					on Netflix, or if the weather is good, play basketball! 🏀
+					My mission is to solve real-world problems through clean code,{" "}
+					<span className='text-[#3CCF91]'>modern technologies</span>, and{" "}
+					<span className='text-[#3CCF91]'>creative solutions</span>.
 				</p>
 			</div>
 			<div className=' order-1 md:order-2 flex items-center justify-center'>
 				<Image
-					src={profile}
+					src={me}
 					alt='profile'
 					height={300}
 					width={300}

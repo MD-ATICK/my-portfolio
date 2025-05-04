@@ -1,18 +1,15 @@
-import Link from "next/link";
 import React from "react";
+import logo from "@/public/logo.png";
+import Image from "next/image";
 
 export default function Navbar() {
 	return (
-		<div className=' border-b border-state-800 h-14 md:h-16 flex items-center justify-between px-10'>
-			<p className=' font-bold text-2xl  md:text-3xl'>
+		<div className=' z-50 border-b border-state-800 h-14 md:h-16 flex items-center justify-center px-10'>
+			{/* <p className=' font-bold text-2xl  md:text-3xl'>
 				<span className=' text-white/60'>{`{`}</span>A
 				<span className=' text-white/60'>{`}`}</span>
-			</p>
-			<div className='flex items-center gap-6 text-sm md:text-lg font-medium'>
-				<Link href={"/"}>Home</Link>
-				<Link href={"/"}>Projects</Link>
-				<Link href={"/"}>Blog</Link>
-			</div>
+			</p> */}
+			<Image src={logo} alt='logo' width={50} height={50} />
 		</div>
 	);
 }

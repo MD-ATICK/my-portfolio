@@ -1,6 +1,7 @@
 import React from "react";
 import { AtSign, Github, Linkedin } from "lucide-react";
 import { Cover } from "./cover";
+import Link from "next/link";
 
 export default function Header() {
 	return (
@@ -21,29 +22,42 @@ export default function Header() {
 				</p>
 				<div className=' space-y-2'>
 					<p className=' text-muted-foreground text-sm md:text-2xl'>
-						🧠 Backend expert with a focus on serverless architecture and modern
-						tech stacks.
-					</p>
-					<p className=' text-muted-foreground text-sm md:text-2xl'>
 						🚀 Currently specializing in Frontend (React / Next.js)
 					</p>
 					<p className=' text-muted-foreground text-sm md:text-2xl'>
-						⚡ Learning Backend (Node.js / Express.js)
+						⚡ Backend expert with a focus on serverless architecture and modern
+						tech stacks.
 					</p>
 				</div>
 				<div className=' flex items-center gap-3'>
-					<div className=' bg-neutral-900 w-fit p-2 px-4 rounded-[5px] flex items-center gap-2 '>
+					<Link
+						href={"https://github.com/MD-ATICK"}
+						className=' bg-neutral-900 w-fit p-2 px-4 rounded-[5px] flex items-center gap-2 '
+					>
 						<Github fill='black' color='#3CCF91' size={20} />
 						<p className=' font-semibold text-sm md:text-lg'>Github</p>
-					</div>
-					<div className=' bg-neutral-900 w-fit p-2 px-4 rounded-[5px] flex items-center gap-2 '>
+					</Link>
+					<Link
+						href={"https://www.linkedin.com/in/md-atick-47553927b/"}
+						className=' bg-neutral-900 w-fit p-2 px-4 rounded-[5px] flex items-center gap-2 '
+					>
 						<Linkedin fill='#3CCF91' color='#3CCF91' size={20} />
 						<p className=' font-semibold text-sm md:text-lg'>LinkedIn</p>
-					</div>
-					<div className=' bg-neutral-900 w-fit p-2 px-4 rounded-[5px] flex items-center gap-2 '>
+					</Link>
+					<Link
+						href={"mailto:atick.business.info@gmail.com"}
+						className=' bg-neutral-900 w-fit p-2 px-4 rounded-[5px] flex items-center gap-2 '
+					>
 						<AtSign color='#3CCF91' size={20} />
 						<p className=' font-semibold text-sm md:text-lg'>Gmail</p>
-					</div>
+					</Link>
+					<Link
+						href={"#projects"}
+						className=' bg-neutral-900 w-fit p-2 px-4 rounded-[5px] flex items-center gap-2 '
+					>
+						<AtSign color='#3CCF91' size={20} />
+						<p className=' font-semibold text-sm md:text-lg'>Gmail</p>
+					</Link>
 				</div>
 			</div>
 		</div>

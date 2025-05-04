@@ -8,7 +8,7 @@ import { TracingBeam } from "./tracing-beam";
 
 export default function MyWorks() {
 	return (
-		<div className=' pl-4'>
+		<div id='projects' className=' pl-4'>
 			<TracingBeam>
 				<div className=' pl-10 pr-2 md:px-0 py-20 space-y-3'>
 					<h1 className=' font-bold text-3xl'>⚡All Creative Works.</h1>
