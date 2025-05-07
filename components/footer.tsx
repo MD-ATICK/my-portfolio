@@ -1,4 +1,4 @@
-import { AtSign, Github, Linkedin } from "lucide-react";
+import { FileText, Github, Linkedin } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -34,8 +34,15 @@ export default function Footer() {
 					href={"mailto:atick.business.info@gmail.com"}
 					className=' bg-neutral-900 w-fit p-2 px-4 rounded-[5px] flex items-center gap-2 '
 				>
-					<AtSign color='#3CCF91' size={20} />
-					<p className=' font-semibold text-sm md:text-lg'>Gmail</p>
+					<FileText color='#3CCF91' size={20} />
+					<Link
+						href={
+							"https://drive.google.com/file/d/1fqFqRrVkL8NhLQYcL6MnH6TdYs6eBqPF/view?usp=drive_link"
+						}
+						className=' font-semibold text-sm md:text-lg'
+					>
+						Resume
+					</Link>
 				</Link>
 			</div>
 			<div className=' pt-20 md:pt-32'>

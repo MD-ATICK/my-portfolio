@@ -1,10 +1,11 @@
-import { ExternalLink, MoveRight } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import React from "react";
 import Image from "next/image";
 import movieShebaBd from "@/assets/movieshebabd.png";
 import financeManagement from "@/assets/finance-management.png";
 import { FaPython, FaReact } from "react-icons/fa";
 import { TracingBeam } from "./tracing-beam";
+import Link from "next/link";
 
 export default function MyWorks() {
 	return (
@@ -15,14 +16,19 @@ export default function MyWorks() {
 					<p className=' text-xl text-muted-foreground'>
 						Here&apos;s some of my projects that I have worked on.
 					</p>
-					<p className=' text-xl flex items-center gap-2 text-[#3CCF91] '>
+					{/* <p className=' text-xl flex items-center gap-2 text-[#3CCF91] '>
 						Explore more{" "}
 						<span>
 							<MoveRight />
 						</span>{" "}
-					</p>
+					</p> */}
 					<div className=' grid grid-cols-1 md:grid-cols-2 gap-10'>
-						<div id='work-item' className=' '>
+						<Link
+							href={"https://finance-management-codewithantonio.vercel.app/"}
+							passHref
+							id='work-item'
+							className=' '
+						>
 							<div className='  p-2 border rounded-2xl overflow-hidden'>
 								<Image
 									src={financeManagement}
@@ -49,8 +55,12 @@ export default function MyWorks() {
 								positive or negative based on recent tweets using Natural
 								Language Processing concept called Sentiment Analysis.
 							</p>
-						</div>
-						<div id='work-item' className=' '>
+						</Link>
+						<Link
+							href={"https://movieshebabd.vercel.app/"}
+							id='work-item'
+							className=' '
+						>
 							<div className='  p-2 border rounded-2xl overflow-hidden'>
 								<Image
 									src={movieShebaBd}
@@ -77,7 +87,7 @@ export default function MyWorks() {
 								positive or negative based on recent tweets using Natural
 								Language Processing concept called Sentiment Analysis.
 							</p>
-						</div>
+						</Link>
 					</div>
 				</div>
 			</TracingBeam>
